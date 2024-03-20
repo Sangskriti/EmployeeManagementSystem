@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/employee_details</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name ="show_sql">true</property>
+        <property name = "format_sql">true</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+       
+        <mapping class="com.EmployeeManagementSystem.entities.Attendance"/>
+        <mapping class="com.EmployeeManagementSystem.entities.Department"/>
+        <mapping class="com.EmployeeManagementSystem.entities.Employee"/>
+        <mapping class="com.EmployeeManagementSystem.entities.Performance"/>
+        <mapping class="com.EmployeeManagementSystem.entities.Position"/>
+        <mapping class="com.EmployeeManagementSystem.entities.Salary"/>
+    </session-factory>
+</hibernate-configuration>
